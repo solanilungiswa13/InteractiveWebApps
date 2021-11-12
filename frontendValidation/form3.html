@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Validation</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <form>
+        <label for="text">New task</label>
+        <input type="text" id="newtask" placeholder="Required and must contain no html characters" required><br>
+
+        <label for="textarea">Set task description</label>
+        <textarea placeholder="optional"></textarea><br>
+
+        <label for="date">Task date</label>
+        <input type="date" required><br>
+
+        <label for="time">Task time</label>
+        <input type="time" required>
+
+        <button id="submit">Submit</button>
+    </form>
+
+    <ul id="myTasksList"></ul>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
